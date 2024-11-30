@@ -1,0 +1,303 @@
+
+
+
+
+
+main{
+    margin: 0px auto;
+}
+
+/* All <section> 1° / 2°  */
+main > section{
+    width: 95%;
+    margin: 50px auto;
+}
+
+
+
+/* #region HEROBANNER */
+
+#hero{
+    position: relative;
+}
+
+#hero img{
+    max-width: 100%;
+}
+
+#hero div{
+    width: 25%;
+    color :#ffffff;
+    line-height: 200%;
+    padding: 20px;
+    position: absolute;
+    bottom: 10%;
+    left: 5%;
+}
+
+#hero  a{
+    display: block;
+    width: 25%;
+    padding: 3px 0px;
+    border-radius: 20px;
+    margin-top: 20px;
+    background-color: white;
+    font-weight: bold;
+    font-size: 0.9rem;
+    text-align: center;
+
+}
+
+
+
+
+
+
+/* #endregion */
+
+
+
+
+/* #region SLIDER */
+
+
+/* h2 della <section> */
+section:first-of-type h2{
+    margin: 20px 0px;
+    font-size: 1.8rem;
+}
+
+/* All immage */
+#slider img{
+    height: 250px;
+    width: 100%;
+}
+
+/* Container Slider */
+#slider{
+    overflow: hidden;
+    position: relative;
+    height: 500px;
+}
+
+
+/* All slide  */
+#slider > div{
+    width: 100%;
+    position: absolute;
+    padding: 20px;  
+
+}
+
+/* Container Img + Contenuto */
+#slider > div > div{
+    width: calc((100% - 240px) / 8 );
+    margin: 0px 15px;
+    line-height: 150%;
+    float: left;
+
+    border:1px solid rgb(131, 131, 131);
+
+    /* Effetto transizione :hover */
+    transition: 500ms;
+
+}
+
+/* Container Contenuto  */
+#slider > div > div > div{
+    margin: 15px;
+}
+
+/* <p> prezzo in <div> contenuto */
+#slider > div > div p:first-of-type {
+    margin-top: 30px;
+    font-weight: bold;
+    font-size: 1.4rem;
+}
+
+/* <p> sconto in <div> contenuto  */
+#slider > div > div p:last-of-type{
+    margin-top: 10px;
+    text-decoration: line-through;
+    opacity: 50%;
+}
+
+
+
+/* Hover container img + contenuto  */
+#slider > div > div:hover{
+    box-shadow: 0px 10px 40px -14px #000000;
+    opacity: 95%;
+    cursor: pointer;
+}
+
+
+/* Classi spostamento */
+.centro{
+    transition: 1500ms ease-in-out;
+    left: 0%;
+}
+
+.destra{
+    transition: 1500ms ease-in-out;
+    left: 100%;
+}
+
+.sinistra{
+    transition: 1500ms ease-in-out;
+    left: -100%;
+}
+
+
+/* Bottoni Spostamento */
+.dot{
+    width: 1.5%;
+    height: 26px;
+    border: 1px solid rgb(131, 131, 131);
+    border-radius: 20px;
+    opacity: 50%;
+    position: absolute;
+    bottom:1.5%;
+}
+
+
+#primo{
+    left: 46.4%;
+}
+
+#secondo{
+    left: 49.4%;
+}
+
+#terzo{
+    left: 52.4%;
+}
+
+.selezionato{
+    opacity:100%;
+}
+
+
+
+/* <span> blocco click durante animazione */
+.blocco{
+    width: 10%;
+    padding: 15px;
+    position: absolute;
+    bottom: 1.5%;
+    left: 46%;
+    display: block;
+}
+
+
+
+
+
+
+/* #endregion */
+
+
+
+
+/* #region SEZIONE 2° */
+
+/* <h2> */
+#section2 h2{
+    margin-top: 20px;
+    font-size: 1.8rem;
+}
+
+/* <p> */
+#section2 p{
+    margin-top: 5px;
+    margin-bottom: 20px;
+}
+
+
+/* <div> Container */
+#section2 > div{
+    width: 100%;
+    padding: 20px 35px;
+}
+
+/* <div> small image , <figure> big image      , <figure> small image          */
+#section2 > div > div, #section2 > div > figure, #section2 > div > div > figure{ 
+    width: calc((100% - 35px) / 2);   
+    float: left;
+} 
+
+
+/* <div> small image */
+#section2 > div > div{
+    margin-left: 35px;
+}
+
+/* <figure> big image */
+#section2 > div > figure{
+    position: relative;
+}
+
+/* All <figure> small image */
+#section2 > div > div > figure{
+    position: relative;
+}
+
+
+/* All <img> */
+#section2 img{
+    display: block;
+    max-width: 100%;
+}
+
+
+.space1{
+    margin-left: 35px;
+}
+
+.space2{
+    margin-top: 20px;
+}
+
+/* <a> bottoni */
+#section2 a{
+    width: 25%;
+    padding: 8px 0px;
+    border-radius: 20px;
+    background-color: white;
+
+    font-weight: bold;
+    font-size: 0.9rem;
+    text-align: center;
+
+    position: absolute;
+    left: 38%;
+    bottom: 10%;
+}
+
+/* Hover All <figure>  */
+#section2 figure:hover{
+    box-shadow: 0px 10px 40px -14px #000000;
+    opacity: 95%;
+}
+
+/* Hover all <a> */
+#section2 a:hover{
+    background-color: rgb(216, 216, 216);
+}
+
+
+/* #endregion */
+
+
+
+
+
+
+
+
+
+
+
+
+
+

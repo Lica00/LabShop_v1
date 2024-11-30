@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Carrello </title>
+
+    <link rel="stylesheet" href="../styles/all.css"/>
+    <link rel="stylesheet" href="../styles/header&footer.css"/>
+    <link rel="stylesheet" href="../styles/carrello.css">
+    <script src="../script/carrello.js" defer></script>
+</head>
+<body>
+
+
+    <header> 
+
+        <div id="header1" class="clearfix header">
+            <!-- Bottoni sx -->
+            <a href="../html/manutenzione.html"> <img src="../images/icon1.svg" alt="icona mondo"/> </a>
+            <a href="../html/manutenzione.html"> <img src="../images/icon2.svg" alt="icona pc"/></a>
+
+            <!-- Navbar dx -->
+            <nav>
+                <ul>
+                    <li> <a href="../html/manutenzione.html"> Accedi </a> </li>
+                    <li> <a href="../html/manutenzione.html"> Unisciti a noi </a> </li>
+                    <li> <a href="../html/manutenzione.html"> Aiuto</a>  </li>
+                    <li> <a href="../html/manutenzione.html"> Trova Negozio </a> </li>
+                </ul>
+            </nav>
+        </div>
+
+        <div id="header2">    
+
+            <div class="clearfix header"> 
+                <!-- Logo -->
+                <a href="../html/homepage.html"> <img src="../images/icon3.png" alt="icona lab"/> </a>
+
+                <!-- Navbar centrale -->
+                <nav class="clearfix"> 
+                    <ul>
+                        <li> <a href="../html/manutenzione.html"> Novità </a> </li>
+                        <li> <a href="../html/manutenzione.html"> Chiavi random </a> </li>
+                        <li> <a href="../html/manutenzione.html"> Categorie </a>  </li>
+                        <li> <a href="../html/manutenzione.html"> Notizie </a> </li>
+                    </ul>
+                </nav>
+
+                <!-- Cart / Like -->
+                <a href="../html/carrello.html"> <img src="../images/icon4.svg" alt="icona carrello"/></a>
+                <a href="../html/manutenzione.html"> <img src="../images/icon5.svg" alt="icona like"/></a>
+
+
+                <!-- Input Cerca -->
+                <div id="campoInput">
+                    <a href="#"> <img src="../images/icon6.svg"/> </a>
+                    <input type="text" id="ricerca" name="ricerca" placeholder="Cerca">
+                </div>   
+            </div>
+        </div> 
+
+        <div id="header3" class="header"> 
+            <!-- Promozione -->
+            <a href="../html/manutenzione.html">
+                <span> Registrati subito </span> <br/>
+                <span> Per te il 20% di sconto! </span>
+            </a>
+        </div>
+
+
+
+
+
+    </header>
+
+    <main class="clearfix"> 
+
+        <!-- Container Spedizione + Carrello -->
+        <div id="cont1"> 
+
+            <!-- Promo spedizione -->
+            <div id="spedizione"> 
+                <h3> Spedizione gratuita per i membri </h3>
+                <p> Diventa membro e approfitta della spedizione rapida e grauita. <a href="#"> Unisciti a noi</a> o <a href="#"> Accedi </a></p>
+            </div>
+
+
+            <!-- Carello -->
+            <div id="carrello"> 
+                <h3> Carrello </h3>
+
+                <!-- Prodotto -->
+                <div class="clearfix"> 
+
+                    <figure> </figure>
+
+                    <!-- info -->
+                    <div>
+                        <h4> Sekiro: shadows die twice </h4>
+                        <p> Versione: Legendary Edition </p>
+                        <p> Piattaforma: Steam </p>
+                    </div>
+
+                    <span> 59,99€ </span>
+                 
+                    <!-- icone -->
+                    <div>
+                        <button type="button"> </button>
+                        <button type="button"> </button>
+                        <button type="button"> </button>
+                    </div>
+
+                    <p> Ritira gratuitamente  </p>
+                    <hr/>
+                </div>
+
+
+            
+                <!-- Prodotto -->
+                <div class="clearfix"> 
+
+                    <figure> </figure>
+
+                    <!-- info -->
+                    <div>
+                        <h4> Elden Ring </h4>
+                        <p> Versione: Platinum Edition </p>
+                        <p> Piattaforma: Uplay </p>
+                    </div>
+
+                    <span> 24,99€ </span>
+            
+                    <!-- icone -->
+                    <div>
+                        <button type="button"> </button>
+                        <button type="button"> </button>
+                        <button type="button"> </button>
+                    </div>
+
+                    <p> Ritira gratuitamente  </p>
+                    <hr/>
+                </div>
+
+                <!-- Prodotto -->
+                <div class="clearfix"> 
+
+                    <figure> </figure>
+
+                    <!-- info -->
+                    <div>
+                        <h4> Payday 2 </h4>
+                        <p> Versione: Base Edition </p>
+                        <p> Piattaforma: Steam </p>
+                    </div>
+
+                    <span> 32,99€ </span>
+            
+                    <!-- icone -->
+                    <div>
+                        <button type="button"> </button>
+                        <button type="button"> </button>
+                        <button type="button"> </button>
+                    </div>
+
+                    <p> Ritira gratuitamente  </p>
+                    <hr/>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- Riepilogo -->
+        <div id="cont2">   
+            <h3> Riepilogo </h3>
+            <span> Hai un codice promozionale? </span>
+
+
+            <!-- Subtotale  -->
+            <div>
+                <span> Subtotale </span>
+                <span class="val"></span>
+            </div>
+
+            <!-- Spedizione -->
+            <div> 
+                <span> Costi di spedizione</span>
+                <span class="val"> Gratis </span>
+            </div>
+
+            <!-- Totale  -->
+            <div id="tot">
+                <hr/>
+                <span> Totale </span>
+                <span  class="val"> 400$ </span>
+                <hr/>
+            </div>
+
+            <button type="button"> Vai al pagamento </button>
+            <button type="button">  </button>
+        </div>
+
+    </main>
+
+
+</body>
+</html>

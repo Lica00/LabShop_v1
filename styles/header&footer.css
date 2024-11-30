@@ -1,0 +1,233 @@
+
+
+
+
+header{
+    background-color:rgb(230, 230, 230);     
+}
+
+
+/* Container header 1° / 2° / 3° */
+.header {
+    width: 95%;
+    margin: 0px auto;
+    position: relative;
+}
+
+
+/* All <img> in <a> */
+header img, footer img{
+    display: block;
+    max-width: 100%;
+}
+
+
+/* #region HEADER 1° */
+
+/* Navbar dx */
+#header1  nav{
+    width: 100%;
+    float:left;
+    padding: 10px 0px;
+}
+
+/* <li> Navbar  */
+#header1 nav ul li{
+    float:right;
+    font-size: 0.9rem;
+    margin-left: 20px;
+}
+
+/* <a> Navbar in :hover  */
+#header1 nav ul li a:hover{
+    opacity: 50%;
+}
+
+
+/* <a> icon */
+#header1 > a{
+    width: 1.5%;
+    position: absolute;
+    margin-top: 3px;
+    bottom: 5px;
+}
+
+/* <a> icon pc */
+#header1 > a:last-of-type{ 
+    width: 2%;
+    bottom: 7px;
+    left: 55px;
+}
+
+/* #endregion */
+
+
+
+/* #region HEADER 2° */
+
+/* Container */
+#header2{
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+}
+
+
+/* Container */
+#header2 div:first-child{
+    padding: 10px 0px;
+}
+
+
+/* Navbar centrale */
+#header2 div nav{
+    padding: 9px 0;
+    width: 27%; 
+    margin: 0px auto;
+
+}
+
+/* <li> Navbar  */
+#header2 div nav li{
+    float:left;
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin: 0px 15px;
+}
+
+/* All <a> */
+#header2 > div > a{
+    position: absolute;
+}
+
+/* <a> logo */
+#header2 > div > a:first-of-type{
+    width: 5%;
+}
+
+/* <a> cart */
+#header2 > div > a:nth-of-type(2){
+    left: 98.6%;
+    top: 25%;
+}
+
+/* <a> like */
+#header2 > div > a:nth-of-type(3){
+    left: 96%;
+    top: 25%;
+}
+
+
+/* Container ricerca */
+#campoInput{
+    position: absolute;
+    top: 19%;
+    left: 83%;
+}
+
+/* <input> */
+#campoInput input{
+    width: 90%;
+    padding: 12px 0px;
+    padding-left: 45px;
+    background-color:  rgb(230, 230, 230);
+    border:none;
+    border-radius: 20px;
+    font-size: 0.9rem;
+}
+
+/* <a> lente  */
+#campoInput > a{
+    width: 15%;
+    height: 32px;
+    position: absolute;
+    border-radius: 20px;
+    top: 10%;
+    left: 2.7%;
+}
+
+#campoInput > a:hover{
+    background-color: rgb(209, 209, 209);
+}
+
+#campoInput > a > img{
+    padding: 5px;
+}
+
+/* #endregion */
+
+
+
+/* #region HEADER 3° */
+#header3{
+    text-align: center;
+    padding: 20px; 
+}
+
+#header3 span:first-of-type{
+    font-weight: bold;
+}
+
+#header3 span:last-of-type{
+    font-size: 0.9rem;
+}
+
+/* #endregion */
+
+
+
+/* #region FOOTER */
+
+/* Container */
+footer{
+    position: relative;
+    margin-top: 20px;
+    background-color:rgb(230, 230, 230); 
+}
+
+
+/* Container navbar */
+footer div{
+    width: 95%;
+    margin: 0px auto;
+}
+
+/* All <nav> */
+footer div nav{
+    margin-right: 200px;
+    padding: 20px 20px 20px 0px;
+    float: left;
+}  
+
+/* All <li> */
+footer li{
+    line-height: 250%;
+    font-size: 1rem;
+}
+
+/* All <a> */
+footer a:hover{
+    opacity: 50%;
+}
+
+/* All 1° <li> info */
+footer nav li:first-child{
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+/* social icon */
+#social{
+    width: 10%;
+    position: absolute;
+    top:8%;
+    right: 2%;
+}
+
+#social ul li a{
+    width: calc(100% / 4);
+    padding: 5px;
+    float:left;
+}
+
+
+/* #endregion */

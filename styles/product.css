@@ -1,0 +1,417 @@
+
+/******* GENERALE  ******/
+
+body{
+    position: relative;
+}
+
+
+/* Serve per gestire comparsa #box */
+header{
+    position: relative;
+    z-index: 2;
+}
+
+/* <main> */
+main {
+    width: 60%;
+    margin: 50px auto;
+}
+
+/* Container Img + Info  */
+main > div{
+    float: left;
+}
+
+
+li {
+    cursor: pointer;
+}
+
+
+
+
+
+
+/****** INFORMAZIONI DESTRA ******/
+
+/* Container Info */
+#cont2{
+    width:calc(40% - 50px);
+    margin-left: 50px;
+    padding: 20px 20px;
+    position: relative;
+}
+
+/* <li> Info  */
+#cont2 li{
+    width: calc((100% - 16px) / 3);
+
+    padding: 10px;
+    margin-left: 8px;
+    margin-top: 8px;
+
+    border:1px solid rgb(189, 189, 189);
+    text-align: center;
+    float:left;
+}
+
+
+/* hover <li> info */
+#cont2 li:hover{
+    border-color: black;
+}
+
+
+/* 1° / 3° / 7° <li> info  */
+#cont2 li:nth-of-type(1), #cont2 li:nth-of-type(4){
+    margin-left: 0px;
+}
+
+
+/* <button> info */
+#cont2 > button{
+    width: 100%;
+    padding: 20px;
+    margin-top: 10px;
+    border-radius: 30px;
+    font-size: 1.1rem;
+    border: none;
+}
+
+
+/* 1° <button> info  */
+#cont2 > button:first-of-type{
+    margin-top: 30px;
+    background-color: rgb(0, 0, 0);
+    color:white;
+}
+
+
+/* 2° <button> info  */
+#cont2 > button:last-of-type{
+    background-color: rgb(255, 255, 255);
+    border: 1px solid rgb(161, 161, 161);
+}
+
+
+/* Hover 1° <button> info  */
+#cont2 > button:first-of-type:hover{
+    opacity: 70%;
+}
+
+/* Hover 2° <button> info  */
+#cont2 > button:last-of-type:hover{
+    border-color: black;
+}
+
+
+/* <span> prezzo */
+#cont2 > span:nth-child(2){
+    font-size: 1.3rem;
+    font-weight: bold;
+    position: absolute;
+    right: 5%;
+    top: 4%;
+}
+
+/* 1° <p> descrizione */
+#cont2 p:nth-child(3){
+    margin-top: 20px;
+    font-weight: bold;
+    
+}
+
+/* 2° <p> descrizione */
+#cont2 p:nth-child(4){
+    margin-top: 5px;
+}
+
+/* <p> versione + piattaforma */
+#cont2 p:nth-child(5), #cont2 p:nth-child(7){
+    margin-top:30px;
+    margin-bottom: 0px;
+    font-weight: bold;
+}
+
+
+
+/* <li> img piattaforma */
+#cont2 > ul:last-of-type li{
+    width: 13%;
+    height: 45px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 0%;
+    border:none;
+    color: transparent;
+    opacity: 70%;
+}
+
+/* Img Steam  */
+#cont2 > ul:last-of-type li:nth-child(1){
+    background-image: url(../images/icon12.png);
+}
+
+/* Img Gog */
+#cont2 > ul:last-of-type li:nth-child(2){
+    background-image: url(../images/icon13.png);
+}
+
+/* Img Uplay */
+#cont2 > ul:last-of-type li:nth-child(3){
+    background-image: url(../images/icon14.png);
+}
+
+
+/* Hover all platform img */
+#cont2 > ul:last-of-type li:hover{
+    opacity: 100%;
+}
+
+
+
+
+/* <li> versione selezionata */
+#cont2 li.checkVer{
+    border-color: black;
+}
+
+/* <li> piattaforma selezionata */
+#cont2 > ul:last-of-type li.checkPlat{
+    opacity: 100%;
+}
+
+/* Piattaforma o Versione non selezionata */
+.error{
+    color:red;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/****** IMMAGINI SINISTRA ******/
+
+
+/* Container Img */
+#cont1{
+    width: 60%;
+    position: relative;
+}
+
+/* All <figure>  */
+#cont1 figure{
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+/* Container Big Image */
+#cont1 >div:first-child{
+    width: calc((85% - 10px ));
+    margin-left: 10px;
+    float:right;
+
+
+}
+
+/* Container Small Image */
+#cont1 > div:last-child{
+    width: 15%;
+    height: 500px;
+    float:left;
+}
+
+
+/* <figure> big Image */
+#cont1 > div:first-child figure{
+    height: 550px;
+}
+
+
+
+/* <video> big image */
+#cont1 > div:first-child iframe{
+    width: 100%;
+    height: 550px;
+}
+
+/* <figure> small Image */
+#cont1 div:last-child figure{
+    height: calc(500px / 6);
+    margin-top: 10px;
+    border-radius: 3px;
+}
+
+/* 1° <figure> small image*/
+#cont1 div:last-child figure:first-child{
+    margin-top:0px;
+}
+
+
+.img1{
+    background-image: url(../images/img12.webp);
+}
+
+.img2{
+    background-image: url(../images/img17.webp);
+}
+
+.img3{
+    background-image: url(../images/img13.webp);
+}
+
+.img4{
+    background-image: url(../images/img14.webp);
+}
+
+.img5{
+    background-image: url(../images/img15.webp);
+}
+
+.img6{
+    background-image: url(../images/img16.webp);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/****** AGGIUNTO AL CARRELLO ******/
+#box{
+    width: 20%;
+    padding: 15px;
+    background-color: white;
+    position: absolute;
+    top: -11%;
+    right: 0%;
+    transition: 1000ms;
+    z-index: 1;
+}
+
+#box > h3 {
+    margin-bottom: 10px;
+}
+
+#box figure{
+    width: 40%; 
+    height: 110px;
+    background-image: url(../images/img12.webp);
+    background-size: cover;
+    float:left;
+}
+
+#descr{
+    width: calc(60% - 10px);
+    margin-left: 10px;
+    line-height: 180%;
+    float:left;
+}
+
+/* <p> Nome */
+#descr p:nth-child(1){
+    font-weight: bold;
+}
+
+/* <p> Versione + Piattaforma */
+#descr p:nth-child(2),#descr p:nth-child(3) {
+    opacity: 80%;
+}
+
+
+/* <button> X per chiudere  */
+#box button:nth-of-type(1){
+    width: 5%;
+    height: 20px;
+    background-image: url(../images/icon11.svg);
+    background-repeat: no-repeat;
+    background-position: 0%;
+    border: none;
+    background-color: transparent;
+    position: absolute;
+    right: 4%;
+    top: 6%;
+    opacity: 95%;
+}
+
+
+/* <button> View Cart + Pagamento */
+#box button:nth-of-type(2), #box button:nth-of-type(3){
+    width: 49.3%;
+    padding: 15px;
+    margin-top: 20px;
+    border: none;
+    border-radius: 30px;
+}
+
+
+/* <button> View Cart */
+#box button:nth-of-type(2){
+    background-color: rgb(255, 255, 255);
+    border: 1px solid rgb(161, 161, 161);
+}
+
+/* <button> Pagamento  */
+#box button:nth-of-type(3){
+    background-color: rgb(0, 0, 0);
+    color:white;
+}
+
+/* Hover <button> view cart   */
+#box button:nth-of-type(2):hover{
+    border-color: black;
+}
+
+/* Hover <button> pagamento  */
+#box button:nth-of-type(3):hover{
+    opacity: 70%;
+}
+
+
+
+
+
+
+
+/*  Posizione comparsa  */
+#box.visibile{ 
+    top: 21%;
+    right: 0%;
+}
+
+/* <span> blocco click  */
+.blocco{
+    width: 100%;
+    height: 99.5%;
+    display: block;
+
+    position: absolute;
+    top: 21%;
+
+    background-color: black;
+    opacity: 30%;
+}
+
+
+
+
+

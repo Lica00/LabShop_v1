@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+*{
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+
+.clearfix::after{
+    content:"";
+    clear: both;
+    display: table;
+}
+
+
+ul { list-style: none; }
+
+a { text-decoration: none; color: black; }
+
+body{
+    max-width: 2000px;
+    margin: 0 auto;
+    font-size: 100%;
+    font-family:'Roboto', sans-serif;
+    background-color: white;
+}
+
+
+/* Non ereditano dal genitore */
+button{ font-family: 'Roboto', sans-serif; }
+
+button:hover{
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+

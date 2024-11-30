@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout</title>
+    <link rel="stylesheet" href="../styles/all.css"/>
+    <link rel="stylesheet" href="../styles/pagamento.css"/> 
+    <script src="../script/pagamento.js" defer></script>
+    
+</head>
+<body>
+
+    <main class="clearfix"> 
+        <h2> Pagamento</h2>
+
+        <!-- Carrello  -->
+        <div id="cart" class="clearfix">   
+            <h3> Nel carrello </h3>
+            <a href="../html/carrello.html"> Modifica </a>
+
+            <!-- Container Prezzi -->
+            <div> 
+                <!-- Subtotale  -->
+                <div id="sub">
+                    <span> Subtotale </span>
+                    <span class="val"> 117,97€ </span>
+                </div>
+
+                <!-- Spedizione -->
+                <div> 
+                    <span> Costi di spedizione</span>
+                    <span class="val"> Gratis </span>
+                </div>
+
+                <!-- Totale  -->
+                <div  id="tot">
+                    <span> Totale </span>
+                    <span  class="val"> 117,97€ </span>
+                </div>
+
+                <hr/>
+            </div>
+
+
+
+            <!-- Container Prodotti -->
+            <div id="prodotti">
+                <p> Arriva entro 10 giorni</p>
+
+                <!-- Prodotto 1° -->
+                <div class="clearfix"> 
+                    <figure> </figure> 
+
+                    <!-- Info  -->
+                    <div> 
+                        <p> Sekiro: shadows die twice </p> 
+                        <p> Versione: Legendary Edition </p>
+                        <p> Piattaforma: Steam </p>
+                        <p> 59,99€</p>
+                    </div>
+                </div>
+
+
+                <!-- Prodotto 2° -->
+                <div class="clearfix"> 
+                    <figure> </figure> 
+
+                    <!-- Info  -->
+                    <div> 
+                        <p> Elden Ring </p> 
+                        <p> Versione: Platinum Edition </p>
+                        <p> Piattaforma: Uplay </p>
+                        <p> 24,99€</p>
+                    </div>
+                </div>
+
+                            
+
+                <!-- Prodotto 3° -->
+                <div class="clearfix"> 
+                    <figure> </figure> 
+
+                    <!-- Info  -->
+                    <div> 
+                        <p> Payday 2 </p> 
+                        <p> Versione: Base Edition </p>
+                        <p> Piattaforma: Steam </p>
+                        <p> 32,99€</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+        <!-- Container Spedizione + Pagamento  -->
+        <div id="cont"> 
+
+            <!--  Spedizione -->
+            <div id="spedizione" class="clearfix"> 
+                <h3> Opzioni di consegna </h3>
+
+                <!-- Scelta  -->
+                <div class="clearfix"> 
+                    <button type="button" class="selezionato">Spedizione</button>
+                    <button type="button">Ritiro</button>
+                    <span class="invisibile"> </span>
+                </div>
+
+                <!-- Ritiro -->
+                <div>
+                    <h3 class="invisibile"> Al momento non disponibile </h3>
+                </div>
+
+                <!-- Spedizione -->
+                <form method="post" id="formSped" class="clearfix">
+                    
+                    <!-- Name  -->
+                    <div> 
+                        <label for="name"> Nome </label>
+                        <input type="text" id="name" name="name" />
+                        <span class="invisibile"> Devi inserire un nome</span>
+                    </div>
+
+                    <!-- LastName  -->
+                    <div>
+                        <label for="lastName"> Cognome </label>
+                        <input type="text" id="lastName" name="lastName"/>
+                        <span class="invisibile"> Devi inserire un cognome</span>
+                    </div>
+
+                    <!-- Address  -->
+                    <div> 
+                        <label for="address"> Indirizzo </label>
+                        <input type="text" id="address" name="address"/>
+                        <span class="invisibile"> Devi inserire un indirizzo</span>
+                    </div>
+
+                    <!-- Email  -->
+                    <div> 
+                        <label for="email"> E-mail </label>
+                        <input type="email" id="mail" name="mail"/>
+                        <span class="invisibile"> Devi inserire un email</span>
+                    </div>
+
+                    <!-- Tel  -->
+                    <div> 
+                        <label for="tel"> Numero di telefono </label>
+                        <input type="tel" id="tel" name="tel"/>
+                        <span class="invisibile"> Devi inserire un telefono</span>
+                    </div>
+
+                    <button id="bottone" class="buttonInvio"> Salva e continua </button>
+                    
+                </form>
+
+                <!-- Recap -->
+                <div class="invisibile">
+                    <p></p>
+                    <p></p>
+                    <p></p>
+                    <p></p>
+                    <p></p>
+                </div>
+
+            </div>
+            
+            <hr/>
+            
+            <!-- Pagamento  -->
+            <div id="pagamento"> 
+                <h3> Pagamento</h3>
+
+                <form method="post" id="formP" class="clearfix invisibile"> 
+
+                    <!-- Paese / Regione   -->
+                    <div id="contP"> 
+                        <h3> Paese/regione di fatturazione </h3>
+
+                        <div> 
+                            <span>  </span>
+                            <a> Modifica </a>
+                        </div>
+
+                        <div id="contS" class="invisibile"> 
+                            <label for="paese"> Seleziona paese/regione </label> 
+                            <select name="paese" id="paese" > 
+                                <option value="Italia"> Italia </option>
+                                <option value="Germania"> Germania </option>
+                                <option value="Inghilterra"> Inghilterra</option>
+                                <option value="Spagna"> Spagna </option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <!-- GiftCard  -->
+                    <div id="contG">
+                        <input type="checkbox" name="giftCard" id="giftCard" value="yes"/>
+                        <label for="giftCard" id="giftCard">  Possiedi una gift card, o un codice promozionale ? </label>                                
+                        <h3 class="invisibile"> Al momento non disponibile </h3>
+                    </div>
+
+
+
+                    <!-- Scegli metodo di pagamento -->
+                    <div id="contPay"> 
+                        <h3> Seleziona metodo di pagamento </h3>
+
+                        <fieldset id="type"> 
+                            <div> 
+                                <input type="radio" name="scelto" id="carta" value="carta"/>
+                                <label for="carta"> <span id="span"> Carta di credito o debito </span> </label>
+                            </div>
+
+                            <div>
+                                <input type="radio" name="scelto" id="paypal" value="paypal"/>
+                                <label for="paypal"> Paypal </label>
+                            </div>
+
+                            <div> 
+                                <input type="radio" name="scelto" id="gpay" value="gpay"/>
+                                <label for="gpay"> Gpay </label>
+                            </div>
+                        </fieldset>
+
+                        <h3 class="invisibile"> Al momento non disponibile </h3>
+
+
+                        <!-- Pagamento con Carta -->
+                        <div id="payCard" class="clearfix invisibile">
+                            <h3> Aggiungi una carta </h3>
+                            
+                            <!-- Dovresti poter aggiungere solo i numeri -->
+                            <div> 
+                                <label for="num"> Numero Carta  </label>
+                                <input type="text" id="num" name="num"/>
+                                <span class="invisibile"> Inserisci carta valida</span>
+                            </div>
+                            
+                            <div> 
+                                <label for="dat"> MM/AA/YY </label>
+                                <input type="text" id="dat" name="dat"/>
+                                <span class="invisibile"> Inserisci data con / </span>
+                            </div>
+                            
+                            <div> 
+                                <label for="cvv"> CVV  </label>
+                                <input type="text" id="cvv" name="cvv"/>
+                                <span class="invisibile"> Inserisci cvv</span>
+                            </div>
+                            
+                            <a href="#"> Where is my CVV? </a>
+                            
+                            </div>
+        
+                    </div>
+
+                    <button id="bottone2" class="buttonInvio invisibile"> Salva e continua </button>
+                </form>
+
+            </div>
+
+            <hr/>
+
+
+        
+
+
+        </div>
+
+
+
+        <!-- Container ordine completato -->
+        <div id="completo" class="invisibile"> 
+            <figure> </figure>
+            <h2> Ordine completato </h2>
+            <p> A breve riceverai un email di conferma </p>
+        </div>   
+
+
+    </main>
+
+
+
+</body>
+</html>
