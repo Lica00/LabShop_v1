@@ -1,6 +1,8 @@
 # Ecommerce Frontend - Videogiochi
-Questo è il front-end di un ecommerce dedicato alla vendita di videogiochi.  
-È stato sviluppato come un'applicazione web statica utilizzando HTML, CSS e JavaScript.
+Questo è il front-end di un ecommerce dedicato alla vendita di videogiochi, sviluppato  
+come primo progetto durante il corso di Full Stack Development presso la scuola LabForTraining.  
+
+Si tratta di un'applicazione web statica, realizzata utilizzando HTML, CSS e JavaScript.
 
 # Struttura
 Il sito include le seguenti pagine HTML, ciascuna associata ai rispettivi file CSS e Javascript:
